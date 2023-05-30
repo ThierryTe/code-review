@@ -1,0 +1,13 @@
+<h1>Inventaire</h1>
+<ng-container *ngIf="(infos$ |async ) as data">
+    <div>
+        <h4>{{data.title}} {{data.quantite}}</h4>
+    </div>
+    <div *ngIf="data.quantite">
+        {{data | productDisplay}}
+    </div>
+
+    <button (click)="command(data)">Commander un produit</button>
+    <button (click)="cancel(data)">Annuler la commande</button>
+    <button #relance appColorChange (click)="relancer(data)">Reclammer</button>
+</ng-container>
