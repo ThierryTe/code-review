@@ -4,11 +4,12 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
   selector: '[appColorChange]'
 })
 export class ColorChangeDirective {
+  @Input() appColorChange = '';
 
   constructor(private el: ElementRef) { }
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.highlight('red');
+    this.highlight(this.appColorChange || 'red');
   }
 
   @HostListener('mouseleave') onMouseLeave() {

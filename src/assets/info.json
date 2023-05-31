@@ -1,0 +1,25 @@
+[{
+    
+    "id":1,
+    "quantite":12,
+    "title":"Iphone",
+    "commentaire": "Iphnone 14 pro max ",
+    "materiaux": ""
+},
+{
+    
+    "id":2,
+    "quantite":2,
+    "title":"Rollex",
+    "commentaire": "Montre rolex",
+    "materiaux": "Or, cuivre"
+},
+{
+    
+    "id":3,
+    "quantite":1,
+    "title":"Télévision samsung",
+    "commentaire": "",
+    "materiaux": ""
+}
+]

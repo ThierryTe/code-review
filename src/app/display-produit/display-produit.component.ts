@@ -11,11 +11,11 @@ import { Observable } from 'rxjs';
 })
 export class DisplayProduitComponent implements OnInit {
 
-  @ViewChild("relance") relanceEl!: ElementRef;
-
-  infos$!: Observable<Info>;
-  
-  constructor(private produitService:ProduitService){}
+color= 'red'
+infos$!: Observable<Info[]>;
+  infos: Info[] = [];
+  constructor(private produitService:ProduitService){
+  }
 
   ngOnInit(): void {
     this.getInfo();
